@@ -21,6 +21,8 @@ Una vez instalado Hadoop, en la guía oficial de Apache, sección “Execution�
 ![Screenshot (1128)](https://user-images.githubusercontent.com/81723932/133598761-d9926219-d34d-4c85-9e67-8e024934d47f.png)
 ![Screenshot (1129)](https://user-images.githubusercontent.com/81723932/133598963-330afedf-7ef3-4ae8-a0d0-8083ca28f7c9.png)
 
+Poniendo de un lado los logs de la cantidad de las operaciones de los bytes leidos y escritos; tenemos un par de logs que nos informan de la cantidad de veces que se hizo la operacion de "map" y la operacion "reduce", entre otros que nos muestran cuantos bytes se dividieron/combinaron/registraron. Los pasos irian asi: toma de datos, mapeo, shuffle (aunque su log aparece despues, es solo el de errores), reduccion, salida (output).
+
 En el mismo jar de ejemplos encontrará otros algoritmos con los que puede experimentar. Cargue al HDFS cualquier documento en texto plano (un poema, un libro, una canción, etc.) y ejecute el programa WordCount. Realice el mismo análisis anterior. Responda:
 ¿Qué resultados generó el programa y cuales son los pasos MapReduce que implementa?
 
@@ -28,7 +30,8 @@ En el mismo jar de ejemplos encontrará otros algoritmos con los que puede exper
 ![Screenshot (1131)](https://user-images.githubusercontent.com/81723932/133599328-7d50e8ec-18d5-400c-bd12-ec909223bbed.png)
 ![Screenshot (1132)](https://user-images.githubusercontent.com/81723932/133599520-5ab4e374-0dfc-482a-b4b8-80c83d7daf48.png)
 ![Screenshot (1133)](https://user-images.githubusercontent.com/81723932/133599606-d0b62720-ae4a-46f7-a739-2cd0455b34f7.png)
-![Screenshot (1134)](https://user-images.githubusercontent.com/81723932/133599677-ee7b8023-c8d8-42a7-9f43-292cf12d2b10.png)
+
+Es basicamente identica a la anterior excepto que no realiza el proceso de map y reduce dos veces, y los archivos output cambiaron.
 
 
 # Parte 3
@@ -48,6 +51,7 @@ Ejecute los códigos original y extendido en PySpark y analice los resultados.
 ![Screenshot (1141)](https://user-images.githubusercontent.com/81723932/133602309-95935bca-60ba-4ac5-b542-9062a7adb5f8.png)
 ![Screenshot (1142)](https://user-images.githubusercontent.com/81723932/133602386-fb0c7234-cb34-4bd8-ad2b-b8b962b058d6.png)
 
+Sets de palabras fueron creadas con el string de la palabra y un numero identificador para el set que se la asigno, aunque la version Scala no muestar dicho numero en el txt creado.
 
 # Parte 4
 Como con cualquier otra herramienta, desarrollar un programa de computador desde la interfaz de línea de comandos es una labor tediosa. Por lo general, los desarrolladores recurren a entornos de desarrollo (IDE) que ofrecen gran variedad de apoyos a la codificación en términos de evaluación de sintaxis, debugging, conexión con recursos externos, entre muchos otros.
@@ -73,6 +77,8 @@ spark-basics.ipynb:
 ![Screenshot (1148)](https://user-images.githubusercontent.com/81723932/133606739-1e0d635b-a6ed-4e9a-b20e-09fac0c282da.png)
 ![Screenshot (1149)](https://user-images.githubusercontent.com/81723932/133606792-c8960d9c-39d2-4922-9b2c-ea4b244088b4.png)
 ![Screenshot (1150)](https://user-images.githubusercontent.com/81723932/133606834-f211435e-42ac-4edf-aafe-119e3bbf59e0.png)
+  
+
 
 spark-data-analysis.ipynb:
   
@@ -84,6 +90,8 @@ spark-data-analysis.ipynb:
 ![Screenshot (1156)](https://user-images.githubusercontent.com/81723932/133607683-41a52011-787d-4368-bc04-e9b0b4dc55ac.png)
 ![Screenshot (1157)](https://user-images.githubusercontent.com/81723932/133607763-2a40e853-5d54-41dc-a8c0-417ea227b7ef.png)
 ![Screenshot (1158)](https://user-images.githubusercontent.com/81723932/133607829-9748a050-da85-466e-b972-0edcea556f63.png)
+  
+
   
  Masters y Workers:
   
