@@ -78,7 +78,7 @@ spark-basics.ipynb:
 ![Screenshot (1149)](https://user-images.githubusercontent.com/81723932/133606792-c8960d9c-39d2-4922-9b2c-ea4b244088b4.png)
 ![Screenshot (1150)](https://user-images.githubusercontent.com/81723932/133606834-f211435e-42ac-4edf-aafe-119e3bbf59e0.png)
   
-
+Lo que sucede en la primera seccion es simplemente la carga de datos de diferentes tipos, la secciones mas importantes serian las de operaciones RDD en donde se mapea, filtra y reduce los sets de data;  y la ultima seccion la cual es para agrupar y ordenar la cantidad de veces que se repitio una palabra en orden ascendente.
 
 spark-data-analysis.ipynb:
   
@@ -91,7 +91,7 @@ spark-data-analysis.ipynb:
 ![Screenshot (1157)](https://user-images.githubusercontent.com/81723932/133607763-2a40e853-5d54-41dc-a8c0-417ea227b7ef.png)
 ![Screenshot (1158)](https://user-images.githubusercontent.com/81723932/133607829-9748a050-da85-466e-b972-0edcea556f63.png)
   
-
+En este caso la seccion de la seccion de carga de datos es mas importante debido a que en esta se especificara la forma en la cual deben ser manejados los datos por los comandos RDD mas alante en el programa, en la segunda seccion con excepcion de una par de comandos necesarios para la visualizacion de las graficas, el resto de comandos son muy standard para lo que concierna SQL y su manera de recopilar informacion, la tercera seccion simplemente guarda los sets de datos obtenidos en la segunda seccion en un directorio de JSONs, asi que diria que todos los comandos en la segunda seccion son la parte mas importante ya que estos son los que compilan la informacion a guardar.
   
  Masters y Workers:
   
